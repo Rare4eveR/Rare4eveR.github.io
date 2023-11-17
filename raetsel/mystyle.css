@@ -1,0 +1,16 @@
+p {
+    width: 100px;
+    height: 99px;
+    display: inline-block;
+}
+
+div {
+    width: 100px;
+    background-color: purple;
+}
+.box {
+    background-color: yellow;
+}
+.imageStyle {
+    width: 200px;
+}
