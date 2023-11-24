@@ -1,11 +1,17 @@
-body {
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
     Background-color: lightcyan;
 
 }
 
 
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
 
 body {
     font-family: 'Poppins';
