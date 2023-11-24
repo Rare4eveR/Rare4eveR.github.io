@@ -1,6 +1,10 @@
 body {
     font-family: "nconsolata", sans-serif;
 }
+inline {
+    inline-size: px100;
+}
+
 
 p {
     width: 100px;
