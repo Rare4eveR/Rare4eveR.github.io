@@ -2,37 +2,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
 
 *{
+
     font-family: 'Poppins', sans-serif;
+    font-size: 30px;
 }
+list {
+    color: #30CCE5;
+}
+p {
+    color: #30CCE5;
+}
+span {
+    border-style: dotted dashed solid double;
+    display: inline-block;
+    color: yellow;
+
+}
+
+li {
+    display: inline-block;
+    width: 20%;
+}
+
 
 body
 {
-    Background-color: lightcyan;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 
+    <p style=color: cyan;">color: cyan;</p>"
+<p style="color: #0000ff;">color: #30CCE5";</p>
+}
+.mix {border-style: dotted dashed solid double;}
+
+img {
+    border-radius: 20px;
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+}
+
+img:hover {
+    filter: drop-shadow(16px 16px 20px red) invert(0%);
 }
 
 
 
-body {
-    font-family: 'Poppins';
-    font-weight: 400;
+
+
+table {
+    text-align: center;
 }
+
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
 
-html {font-size: 100%;} /* 16px */
+html {font-size: 100%;}
 
-h1 {font-size: 4.210rem; /* 67.36px */}
-
-h2 {font-size: 3.158rem; /* 50.56px */}
-
-h3 {font-size: 2.369rem; /* 37.92px */}
-
-h4 {font-size: 1.777rem; /* 28.48px */}
-
-h5 {font-size: 1.333rem; /* 21.28px */}
-
-small {font-size: 0.750rem; /* 12px */}
+h1 {font-size: 4.210rem;
+    color: #30CCE5;
+ text-align: center}
+h2 {font-size: 3.5rem;
+    color: #30CCE5;
+    text-align: center}
+h3 {font-size: 3rem;
+    color: #30CCE5;
+    text-align: center}
+h4 {font-size: 2.5rem;
+    color: #30CCE5;
+    text-align: center}
+h5 {font-size: 1.8rem;
+    color: #30CCE5;
+    text-align: center}
+small {font-size: 1.450rem;}
