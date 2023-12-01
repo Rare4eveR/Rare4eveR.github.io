@@ -9,3 +9,29 @@ color: gold;
 
 h2 { text-align: center
 }
+red {
+    color: darkred;
+    background-color: rebeccapurple;
+
+}
+nav {
+    border-style: solid;
+    display: inline-block;
+    color: greenyellow;
+    border-color: #330867;
+    width: 100%;
+    }
+h1 {
+    display: inline-block;
+}
+h5 {
+    inset-inline: 50px;
+}
+.cena {
+    border-radius: 20px;
+}
+.cena2 {
+    border-radius: 20px;
+    position: absolute;
+    right: 0px;
+}
