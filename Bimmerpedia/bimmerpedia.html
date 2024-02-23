@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bimmerpedia.css">
+    <meta charset="UTF-8">
+    <title>Bimmerpedia</title>
+
+
+<body>
+<div id="bmw">
+    <div class="circle c1">
+        <div class="circle c2">
+            <span class="b">B</span><span class="m">M</span><span class="w">W</span>
+            <div class="circle c3">
+                <div class="shape s1"></div>
+                <div class="shape s2"></div>
+                <div class="shape s3"></div>
+                <div class="shape s4"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<h1> Bimmerpedia  </h1>
+<h2> Du bist neugierig oder hast interesse an einem gebrauchten BMW oder möchtest einfach nur Infos und Fakten wissen? </h2>
+<h2> Dann bist du hier genau richtig! Hier bekommst du wichtige und good to know Infos welche dir die Gebrauchtwagen Suche erleichtern.  </h2>
+<!DOCTYPE html>
+<html>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 30px;
+            border: none;
+            outline: blue;
+            color: blue;
+            padding: 14px 16px;
+            background: none;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown .drop1er {
+            cursor: pointer;
+            font-size: 30px;
+            border: none;
+            outline: blue;
+            color: deepskyblue;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown .drop3er {
+            cursor: pointer;
+            font-size: 30px;
+            border: none;
+            outline: blue;
+            color: blue;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown .drop5er {
+            cursor: pointer;
+            font-size: 30px;
+            border: none;
+            outline: blue;
+            color: red;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown .drop7er {
+            cursor: pointer;
+            font-size: 30px;
+            border: none;
+            outline: blue;
+            color: deepskyblue;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown .dropbx{
+            cursor: pointer;
+            font-size: 30px;
+            border: none;
+            outline: blue;
+            color: blue;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown .dropz {
+            cursor: pointer;
+            font-size: 30px;
+            border: none;
+            outline: blue;
+            color: red;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+
+        .navbar a:hover, .dropdown:hover .drop1er, .drop1er:focus {
+            background-color: lightblue;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+            background-color: lightblue;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body >
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="https://www.mobile.de/">Mobile</a>
+    <div class="dropdown">
+        <button class="drop1er" onclick="myFunction()">1ER -Reihe
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <button class="drop3er" onclick="myFunction()">3ER -Reihe
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <button class="drop5er" onclick="myFunction()">5ER -Reihe
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <button class="drop7er" onclick="myFunction()">7ER -Reihe
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <button class="dropbx" onclick="myFunction()">X -Reihe
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <button class="dropz" onclick="myFunction()">Z -Reihe
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+</div>
+
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Click on the "Dropdown" link to see the dropdown menu.</p>
+
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+</body>
+</html>

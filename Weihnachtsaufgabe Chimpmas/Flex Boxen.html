@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    body {
+        margin: 10px;
+    }
+    .red {
+        width: 1400px;
+        height: 100px;
+        background-color: red;
+    }
+    .lightblue {
+        width: 1400px;
+        height: 100px;
+        background-color: deepskyblue;
+    }
+    .blue {
+        width: 1400px;
+        height: 100px;
+        background-color: darkblue;
+    }
+#main {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    /*flex-start, flex-end, space-around, space-between*/
+    align-items: center;
+    /*flex-end, center*/
+    flex-wrap: wrap;
+    /*no-wrap, wrap-reverse*/
+    flex-direction: row;
+    /*row-reverse, column, column-reverse*/
+
+
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Boxen</title>
+</head>
+<body>
+
+<div id="main">
+<div class="lightblue"> </div>
+<div class="blue"> </div>
+<div class ="red"> </div>
+</div>
+
+
+</body>
+</html>
