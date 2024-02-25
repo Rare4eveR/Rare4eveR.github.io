@@ -4,29 +4,30 @@
     <link rel="stylesheet" href="bimmerpedia.css">
     <meta charset="UTF-8">
     <title>Bimmerpedia</title>
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <body>
 <div class="navbar">
     <a href="#home">Home</a>
     <a href="https://www.mobile.de/" target="_blank">Mobile</a>
     <div class="dropdown">
-        <button class="drop1er" onclick="myFunction()">1ER -Reihe
+        <button class="drop1er" onclick="myFunction('drop1er')">1ER -Reihe
             <i class="fa fa-caret-down"></i>
         </button>
-        <button class="drop3er" onclick="myFunction()">3ER -Reihe
+        <button class="drop3er" onclick="myFunction('drop3er')">3ER -Reihe
             <i class="fa fa-caret-down"></i>
         </button>
-        <button class="drop5er" onclick="myFunction()">5ER -Reihe
+        <button class="drop5er" onclick="myFunction('drop5er')">5ER -Reihe
             <i class="fa fa-caret-down"></i>
         </button>
-        <button class="drop7er" onclick="myFunction()">7ER -Reihe
+        <button class="drop7er" onclick="myFunction('drop7er')">7ER -Reihe
             <i class="fa fa-caret-down"></i>
         </button>
-        <button class="dropx" onclick="myFunction()">X -Reihe
+        <button class="dropx" onclick="myFunction('dropx')">X -Reihe
             <i class="fa fa-caret-down"></i>
         </button>
-        <button class="dropz" onclick="myFunction()">Z -Reihe
+        <button class="dropz" onclick="myFunction('dropz')">Z -Reihe
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content" id="myDropdown">
@@ -37,21 +38,22 @@
     </div>
 </div>
 
-
-
 <script>
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
+    function myFunction(className) {
+        var dropdown = document.getElementsByClassName(className)[0].nextElementSibling;
+        dropdown.classList.toggle("show");
     }
     window.onclick = function(e) {
-        if (!e.target.matches('.dropbtn')) {
-            var myDropdown = document.getElementById("myDropdown");
-            if (myDropdown.classList.contains('show')) {
-                myDropdown.classList.remove('show');
+        if (!e.target.matches('.drop1er') && !e.target.matches('.drop3er') && !e.target.matches('.drop5er') && !e.target.matches('.drop7er') && !e.target.matches('.dropx') && !e.target.matches('.dropz')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
             }
         }
     }
-
 </script>
 <h1> Bimmerpedia  </h1>
 <img src="BMW-M-Logo.png" class="mlogo">
@@ -71,25 +73,5 @@
 
 <h2> Du bist neugierig oder hast interesse an einem gebrauchten BMW oder möchtest einfach nur Infos und Fakten wissen? </h2>
 <h2> Dann bist du hier genau richtig! Hier bekommst du wichtige und good to know Infos welche dir die Gebrauchtwagen Suche erleichtern.  </h2>
-<!DOCTYPE html>
-<html>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-<body >
-
-
-</body>
-</html>
-
-
-
-
-
-
-
-
 </body>
 </html>
