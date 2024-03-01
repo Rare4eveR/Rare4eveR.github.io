@@ -72,25 +72,29 @@
         </div>
     </div>
 </div>
+<div class="logo-container">
+    <img src="BMW-M-Logo.png" class="mlogo">
+    <h1 class="Bimmerpda"> Bimmerpedia  </h1>
+    <img src="BMW.svg.png" alt="svg" class="bmw"/>
 
-
-<h1> Bimmerpedia  </h1>
-<img src="BMW-M-Logo.png" class="mlogo">
-<div id="bmw">
-    <div class="circle c1">
-        <div class="circle c2">
-            <span class="b">B</span><span class="m">M</span><span class="w">W</span>
-            <div class="circle c3">
-                <div class="shape s1"></div>
-                <div class="shape s2"></div>
-                <div class="shape s3"></div>
-                <div class="shape s4"></div>
-            </div>
-        </div>
-    </div>
 </div>
 
-<h2> Du bist neugierig oder hast interesse an einem gebrauchten BMW oder möchtest einfach nur Infos und Fakten wissen? </h2>
+
+<h2> Du bist neugierig oder hast interesse an einem gebrauchten BMW oder m&ouml;chtest einfach nur Infos und Fakten wissen? </h2>
 <h2> Dann bist du hier genau richtig! Hier bekommst du wichtige und good to know Infos welche dir die Gebrauchtwagen Suche erleichtern.  </h2>
+<h3> (Das Maximale Budget liegt bei 15.000€)</h3>
+
+<div id="randomWrapper">
+    <div id="random">
+    </div>
+</div>
+<script>
+    const rnd = Math.floor(Math.random() * 6);
+    document.getElementById("random").classList.add(`bild${rnd }`)
+
+</script>
+
+<footer id="footer"> Hamdullilah </footer>
+
 </body>
 </html>
