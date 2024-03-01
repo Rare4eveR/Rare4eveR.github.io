@@ -1,55 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
+    <link rel="stylesheet" href="bimmerpedia.css">
     <meta charset="UTF-8">
-    <title>E88</title>
+    <title>1ER-Reihe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1722031a50.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="navbar">
-    <a href="#home">Home</a>
-    <a href="https://www.mobile.de/" target="_blank">Mobile</a>
-    <div class="dropdown">
-        <button class="drop1er" onclick="myFunction()">1ER -Reihe
+    <a href="bimmerpedia.html">Home</a>
+    <div class="dropdown einser">
+        <button class="dropbtn">1er-Reihe
             <i class="fa fa-caret-down"></i>
         </button>
-        <button class="drop3er" onclick="myFunction()">3ER -Reihe
+        <div class="dropdown-content">
+            <a href="1er.html">Compact</a>
+            <a href="1er.html">Coupé</a>
+            <a href="1er.html">Cabrio</a>
+        </div>
+    </div>
+    <div class="dropdown dreier">
+        <button class="dropbtn">3er-Reihe
             <i class="fa fa-caret-down"></i>
         </button>
-        <button class="drop5er" onclick="myFunction()">5ER -Reihe
+        <div class="dropdown-content">
+            <a href="#">Limousine</a>
+            <a href="#">Coupé</a>
+            <a href="#">Kombi</a>
+        </div>
+    </div>
+    <div class="dropdown fuenfer">
+        <button class="dropbtn">5er-Reihe
             <i class="fa fa-caret-down"></i>
         </button>
-        <button class="drop7er" onclick="myFunction()">7ER -Reihe
+        <div class="dropdown-content">
+            <a href="#">Limousine</a>
+            <a href="#">Coupé (6er BMW)</a>
+            <a href="#">Kombi</a>
+        </div>
+    </div>
+    <div class="dropdown siebener">
+        <button class="dropbtn">7er-Reihe
             <i class="fa fa-caret-down"></i>
         </button>
-        <button class="dropx" onclick="myFunction()">X -Reihe
+        <div class="dropdown-content">
+            <a href="#">Limousine</a>
+
+        </div>
+    </div>
+    <div class="dropdown x">
+        <button class="dropbtn">X-Reihe
             <i class="fa fa-caret-down"></i>
         </button>
-        <button class="dropz" onclick="myFunction()">Z -Reihe
+        <div class="dropdown-content">
+            <a href="#">SUV</a>
+
+        </div>
+    </div>
+    <div class="dropdown z">
+        <button class="dropbtn">Z-Reihe
             <i class="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-content" id="myDropdown">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+        <div class="dropdown-content">
+            <a href="#">Roadster</a>
         </div>
     </div>
 </div>
+<div class="logo-container">
+    <img src="BMW-1er-2016-01.jpg" class="topimage">
+    <header> <h1 class="Bimmerpda"> 1ER - Reihe  </h1></header>
+    <img src="BMW.svg.png" alt="svg" class="bmw"/>
+
+</div>
 
 
-<script>
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-    window.onclick = function(e) {
-        if (!e.target.matches('.dropbtn')) {
-            var myDropdown = document.getElementById("myDropdown");
-            if (myDropdown.classList.contains('show')) {
-                myDropdown.classList.remove('show');
-            }
-        }
-    }
+<minisection><h2> Der BMW 1er ist ein kompakter Premium-Kompaktwagen, der seit 2004 von BMW hergestellt wird.
+    Er ist in der Regel als Fünftürer Kompaktwagen erhältlich, obwohl es auch eine dreitürige Version also Coupé oder Cabrio gibt. </h2></minisection>
+<div class="midimagewrapper">
+<img src="BMW-1er-Coup-BMW-1er-Cabrio-Facelift-2011-react169Big-4aae5727-440182.avif" class="midimage" alt="Cabrio E88 / E87 Coupé img">
+</div>
+<section><h2> Der 1er BMW ist in verschiedenen Motorvarianten erhältlich, darunter Benzin-, Diesel- und neuerdings auch Hybridmodelle.</h2></section>
 
-</script>
 
+<article> <h2> Vorteile des BMW 1er :</h2></article>
+<article> <h2>
+    Fahrdynamik </br>
+    Technologie </br>
+    Zuverlässigkeit </br>
+    Günstig im Unterhalt sowie Einkaufspreis</br>
+    Geeignet für die Stadt
+</h2>
+</article>
+<section>
+    <h2>
+    Nachteile des BMW 1er:
+    </h2>
+</section>
+<section>
+    <h2>
+    Platzangebot </br>
+        Komfort zumindest hinten </br>
+        Wertverlust
+
+    </h2>
+</section>
+<h3> Fazit: Ein Günstiger Alltagswagen der einem komfortabel, sicher und schnell von A nach B bringt. </h3>
+
+
+
+
+    <footer id="footer"> Thank you for Visiting.  /  The Ultimate Driving Machine  /  Sheer Driving Pleasure </footer>
+</div>
 </body>
 </html>

@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/1722031a50.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="navwrap">
 <div class="navbar">
     <a href="#home">Home</a>
     <div class="dropdown einser">
@@ -16,9 +17,9 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="1er.html">Compact</a>
+            <a href="1er.html">Coupé</a>
+            <a href="1er.html">Cabrio</a>
         </div>
     </div>
     <div class="dropdown dreier">
@@ -26,9 +27,9 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Limousine</a>
+            <a href="#">Coupé</a>
+            <a href="#">Kombi</a>
         </div>
     </div>
     <div class="dropdown fuenfer">
@@ -36,9 +37,9 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Limousine</a>
+            <a href="#">Coupé (6er BMW)</a>
+            <a href="#">Kombi</a>
         </div>
     </div>
     <div class="dropdown siebener">
@@ -46,9 +47,8 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Limousine</a>
+
         </div>
     </div>
     <div class="dropdown x">
@@ -56,9 +56,8 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">SUV</a>
+
         </div>
     </div>
     <div class="dropdown z">
@@ -66,35 +65,39 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Roadster</a>
         </div>
     </div>
 </div>
+</div>
 <div class="logo-container">
     <img src="BMW-M-Logo.png" class="mlogo">
-    <h1 class="Bimmerpda"> Bimmerpedia  </h1>
+   <header> <h1 class="Bimmerpda"> Bimmerpedia  </h1></header>
     <img src="BMW.svg.png" alt="svg" class="bmw"/>
 
 </div>
 
+<div class="contentwrapper">
+    <section><h2> Du bist neugierig oder hast interesse an einem gebrauchten BMW oder m&ouml;chtest einfach nur Infos und Fakten über die Marke wissen? </h2></section>
+    <minisection><h2> Dann bist du hier genau richtig!   </h2></minisection>
 
-<h2> Du bist neugierig oder hast interesse an einem gebrauchten BMW oder m&ouml;chtest einfach nur Infos und Fakten wissen? </h2>
-<h2> Dann bist du hier genau richtig! Hier bekommst du wichtige und good to know Infos welche dir die Gebrauchtwagen Suche erleichtern.  </h2>
-<h3> (Das Maximale Budget liegt bei 15.000€)</h3>
+    <article> <h2>Egal, ob du nach einem sportlichen Coupé, einem geräumigen SUV, einem Praktischen Kombi oder einem Kompaktwagen suchst, Hier bekommst du wichtige und good to know Infos welche dir die Gebrauchtwagen Suche erleichtern.</h2></article>
+    <h3> (Das Maximale Budget liegt bei 15.000€)</h3>
+</div>
 
 <div id="randomWrapper">
     <div id="random">
     </div>
 </div>
 <script>
-    const rnd = Math.floor(Math.random() * 6);
+    const rnd = Math.floor(Math.random() * 7);
     document.getElementById("random").classList.add(`bild${rnd }`)
 
 </script>
+<div id="footer-wrapper">
 
-<footer id="footer"> Hamdullilah </footer>
 
+<footer id="footer"> Thank you for Visiting.  /  The Ultimate Driving Machine  /  Sheer Driving Pleasure </footer>
+</div>
 </body>
 </html>
